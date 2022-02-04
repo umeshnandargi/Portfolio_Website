@@ -141,7 +141,7 @@ def video():
 @app.route('/weather', methods = ["POST", "GET"])
 def weather():
     try:
-        base_url = "http://api.openweathermap.org/data/2.5/weather"
+        base_url = "https://api.openweathermap.org/data/2.5/weather"
         API_key = '7eb1f8c7bda4c85046993ddbc3a32f9b'
 
         city = request.form.get("city_nm")
