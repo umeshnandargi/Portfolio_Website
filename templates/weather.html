@@ -8,8 +8,8 @@
         <link rel = "stylesheet" href ="{{ url_for('static', filename= 'css/weather.css')}}">
     </head>
 <body class="weather-body" style="background-image: url({{url_for('static', filename='/'+filename)}})">
-    <p align = "left"><a href="/"><button class="btn"><i class="fa fa-home"></i> Home</button></a></p>
     <div class="app-wrap">
+         <p align = "left"><a href="/"><button class="btn"><i class="fa fa-home"></i> Home</button></a></p>
     <form action="/weather" method = 'post'>
     <header>
         <input type="text" autocomplete="off" class="search-box"
