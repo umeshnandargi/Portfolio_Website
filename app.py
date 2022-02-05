@@ -173,6 +173,11 @@ def weather():
         else:
             filename = 'Cold.jpg'
 
+        try:
+            city = f'{city}, {data["sys"]["country"]}'
+        except:
+            city = city
+
         current_temp = t
         degree = '°C'
         current_weather = weather_data
